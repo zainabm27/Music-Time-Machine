@@ -1,18 +1,46 @@
-# Music Time Machine
+# 🎵 Music Time Machine
 
-A Python automation project that recreates Billboard Hot 100 playlists on YouTube Music.
+A Python automation project that recreates Billboard Hot 100 playlists from any selected date on YouTube Music.
 
 ## Features
-- Scrapes the Billboard Hot 100 for a user-selected date.
-- Searches each song on YouTube Music.
-- Automatically creates a private playlist.
-- Adds the songs to the playlist.
+
+- Scrapes Billboard Hot 100
+- Retrieves the Top 100 songs
+- Creates a private YouTube Music playlist
+- Automatically adds songs
+- Prevents duplicate playlists
 
 ## Technologies
+
 - Python
 - Requests
 - BeautifulSoup
 - YTMusicAPI
 
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+python main.py
+```
+
+Enter a date in the format:
+
+```
+YYYY-MM-DD
+```
+
+Example:
+
+```
+2005-07-15
+```
+
 ## Note
-This project requires a local `browser.json` authentication file, which is intentionally excluded from the repository for security reasons.
+
+`browser.json` is required for YouTube Music authentication and is intentionally excluded from this repository.
